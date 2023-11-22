@@ -13,10 +13,14 @@ class ViewController: UIViewController {
     
     let tasks = [String]()
     
+    @IBAction func didTapAdd() {
+        
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        // Get all current saved tasks
     }
 
 
@@ -35,4 +39,11 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tasks.count
     }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = tasks[indexPath.row]
+        return cell
+    }
 }
+

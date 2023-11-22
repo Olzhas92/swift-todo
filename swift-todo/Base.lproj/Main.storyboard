@@ -40,7 +40,9 @@
                             <constraint firstItem="rC9-6n-G73" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qPy-f0-EAj"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="N9I-Ea-32K"/>
+                    <navigationItem key="navigationItem" id="N9I-Ea-32K">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="2B0-yz-mrN"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="rC9-6n-G73" id="Ug2-eb-ry4"/>
                     </connections>
@@ -48,6 +50,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="962.59541984732823" y="3.5211267605633805"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="K4F-9y-cdp">
+            <objects>
+                <viewController id="2vS-qG-Tw4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="13c-Xb-pC3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="EPV-ut-jKk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Hb-Xx-bMz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="965" y="714"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="0VM-AM-AIj">

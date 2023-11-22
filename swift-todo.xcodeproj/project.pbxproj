@@ -16,6 +16,8 @@
 		1C8084B22B0E2D8D00CF4901 /* swift_todoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8084B12B0E2D8D00CF4901 /* swift_todoTests.swift */; };
 		1C8084BC2B0E2D8E00CF4901 /* swift_todoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8084BB2B0E2D8E00CF4901 /* swift_todoUITests.swift */; };
 		1C8084BE2B0E2D8E00CF4901 /* swift_todoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8084BD2B0E2D8E00CF4901 /* swift_todoUITestsLaunchTests.swift */; };
+		1C8084CB2B0E436400CF4901 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8084CA2B0E436400CF4901 /* EntryViewController.swift */; };
+		1C8084CD2B0E437D00CF4901 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8084CC2B0E437D00CF4901 /* TaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		1C8084B72B0E2D8E00CF4901 /* swift-todoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-todoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C8084BB2B0E2D8E00CF4901 /* swift_todoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_todoUITests.swift; sourceTree = "<group>"; };
 		1C8084BD2B0E2D8E00CF4901 /* swift_todoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_todoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1C8084CA2B0E436400CF4901 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		1C8084CC2B0E437D00CF4901 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				1C8084A32B0E2D8D00CF4901 /* Assets.xcassets */,
 				1C8084A52B0E2D8D00CF4901 /* LaunchScreen.storyboard */,
 				1C8084A82B0E2D8D00CF4901 /* Info.plist */,
+				1C8084CA2B0E436400CF4901 /* EntryViewController.swift */,
+				1C8084CC2B0E437D00CF4901 /* TaskViewController.swift */,
 			);
 			path = "swift-todo";
 			sourceTree = "<group>";
@@ -259,6 +265,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C80849F2B0E2D8D00CF4901 /* ViewController.swift in Sources */,
+				1C8084CB2B0E436400CF4901 /* EntryViewController.swift in Sources */,
+				1C8084CD2B0E437D00CF4901 /* TaskViewController.swift in Sources */,
 				1C80849B2B0E2D8D00CF4901 /* AppDelegate.swift in Sources */,
 				1C80849D2B0E2D8D00CF4901 /* SceneDelegate.swift in Sources */,
 			);
