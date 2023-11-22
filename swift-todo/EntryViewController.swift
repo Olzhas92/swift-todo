@@ -28,7 +28,7 @@ class EntryViewController: UIViewController, UITextFieldDelegate {
     
     @objc func saveTask() {
         print("Task has been created")
-        guard let text = field.text, !text.IsEmpty else {
+        guard let text = field.text, !text.isEmpty else {
             return
         }
         

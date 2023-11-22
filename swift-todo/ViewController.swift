@@ -11,7 +11,7 @@ class ViewController: UIViewController {
     
     @IBOutlet var tableView: UITableView!
     
-    let tasks = [String]()
+    var tasks = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +32,8 @@ class ViewController: UIViewController {
     }
     
     func updateTasks() {
+        tasks.removeAll()
+        
         guard let count = UserDefaults().value(forKey: "count") as? Int else {
             return
         }
@@ -39,8 +41,9 @@ class ViewController: UIViewController {
             if let task = UserDefaults().value(forKey: "task_\(item + 1)") as? String {
                 tasks.append(task)
             }
-            
         }
+        
+        tableView.reloadData()
     }
     
     @IBAction func didTapAdd() {
