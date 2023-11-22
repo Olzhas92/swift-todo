@@ -8,6 +8,11 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var tableView: UITableView!
+    
+    let tasks = [String]()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,3 +22,17 @@ class ViewController: UIViewController {
 
 }
 
+extension ViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+}
+
+extension ViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return tasks.count
+    }
+}
